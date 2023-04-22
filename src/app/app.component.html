@@ -1,0 +1,64 @@
+<div class="d-grid   bg-white mt-5 p-3"
+style="margin: auto; width: 500px; border-radius: 10px 10px 70px 10px;">
+  <div class="d-flex justify-content-start">
+    <div class="d-grid  p-2">
+      <span>
+        Day
+      </span>
+      <input type="text" class="h3" [placeholder]="currentDay" [(ngModel)]="day"  style="border: 1px solid black; width: 100px; margin-right: 10px; padding: 7px 30px 7px 7px ; border-radius: 10px;" />
+
+
+
+    </div>
+    <div class="d-grid  p-2">
+      <span>
+        Month
+      </span>
+      <input type="text" class="h3" [placeholder]="currentMonth" [(ngModel)]="month" style="border: 1px solid black; width: 100px; margin-right: 10px; padding: 7px 30px 7px 7px ; border-radius: 10px;" />
+
+
+
+    </div>
+    <div class="d-grid p-2">
+      <span>
+        Year
+      </span>
+      <input type="text" class="h3" [(ngModel)]="year" [placeholder]="currentYear" style="border: 1px solid black; width: 100px; margin-right: 10px; padding: 7px 30px 7px 7px ; border-radius: 10px;" />
+
+
+
+    </div>
+
+
+
+  </div>
+  <hr style="margin-right: 70px;">
+  <div class=""
+  role="button"
+  style="display: flex; justify-content: end; margin-right: 30px; margin-top: -42px; z-index: 5; align-items: center;">
+    <span (click)="showResult()">
+      <i class="fa fa-arrow-circle-down" style="color: mediumslateblue ; border-radius: 50%; font-size:50px; z-index: 7;" ></i>
+
+    </span>
+
+  </div>
+  <div>
+    <b class="text-danger" *ngIf="isErrorShowed">{{error}}</b>
+  </div>
+  <div *ngIf="isResultShown">
+    <div style="margin-left: 30px;">
+      <span class="h1" style="color: mediumslateblue ; font-size: 50px;">{{currentYear-year}}</span>
+      <b class="h1">years</b>
+    </div>
+    <div style="margin-left: 30px;">
+      <span class="h1" style="color: mediumslateblue ; font-size: 50px;">{{currentMonth-month +12}}</span>
+      <b class="h1">months</b>
+    </div>
+    <div style="margin-left: 30px;">
+      <span class="h1" style="color: mediumslateblue ; font-size: 50px;">{{currentDay-day}}</span>
+      <b class="h1">days</b>
+    </div>
+
+
+  </div>
+</div>
