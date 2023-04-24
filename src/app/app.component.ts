@@ -13,6 +13,8 @@ year:any
 month:any
 day:any
 
+
+
 currentMonth = new Date().getMonth()+1
 currentYear =new Date().getFullYear()
 currentDay =new Date().getDate()
@@ -29,6 +31,11 @@ showResult(){
   if(this.year<=this.currentYear && this.year>0 && this.month<=12 && this.month>0 && this.day<=31  ){
     this.isResultShown=true
     this.isErrorShowed=false
+
+
+
+
+
 
   }
   else{

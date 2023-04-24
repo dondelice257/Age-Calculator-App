@@ -9,6 +9,7 @@ import {MatButtonToggleModule} from '@angular/material/button-toggle';
 import {MatAutocompleteModule} from '@angular/material/autocomplete';
 import { FormsModule } from '@angular/forms';
 import {MatCardModule} from '@angular/material/card';
+import {MatBadgeModule} from '@angular/material/badge';
 
 @NgModule({
   declarations: [
@@ -22,7 +23,8 @@ import {MatCardModule} from '@angular/material/card';
     MatButtonToggleModule,
     MatAutocompleteModule,
     FormsModule,
-    MatCardModule
+    MatCardModule,
+    MatBadgeModule
   ],
   providers: [],
   bootstrap: [AppComponent]
